@@ -13,26 +13,25 @@ Dive into the world of retail analytics with this comprehensive **Walmart Sales 
 
 ## <span style="color:#673AB7">📁 **About the Data**</span>
 The dataset includes sales transactions from three Walmart branches located in **Mandalay**, **Yangon**, and **Naypyitaw**. This dataset comprises **17 columns** and **1000 rows** and contains **no null values**.
-
-| **Column Name**       | **Description**                                 |    
-|-----------------------|-------------------------------------------------|
-| `invoice_id`          | Invoice of the sales made                       |        
-| `branch`              | Branch at which sales were made                 | 
-| `city`                | The location of the branch                      | 
-| `customer_type`       | The type of the customer                        | 
-| `gender`              | Gender of the customer making the purchase      | 
-| `product_line`        | Product line of the product sold                | 
-| `unit_price`          | The price of each product                       | 
-| `quantity`            | The amount of the product sold                  | 
-| `VAT`                 | The amount of tax on the purchase               | 
-| `total`               | The total cost of the purchase                  |
-| `date`                | The date on which the purchase was made         | 
-| `time`                | The time at which the purchase was made         |             
-| `payment`             | The total amount paid                           |       
-| `cogs`                | Cost Of Goods Sold                              |      
-| `gross_margin_pct`    | Gross margin percentage                         |
-| `gross_income`       | Gross Income                                    |
-| `rating`             | Customer Rating                                 | 
+| **Column Name**       | **Description**                                 | **Data Type**     |
+|-----------------------|-------------------------------------------------|--------------------------|
+| `invoice_id`          | Invoice of the sales made                       | `str`                    |
+| `branch`              | Branch at which sales were made                 | `str`                    |
+| `city`                | The location of the branch                      | `str`                    |
+| `customer_type`       | The type of the customer                        | `str`                    |
+| `gender`              | Gender of the customer making the purchase      | `str`                    |
+| `product_line`        | Product line of the product sold                | `str`                    |
+| `unit_price`          | The price of each product                       | `float`                  |
+| `quantity`            | The amount of the product sold                  | `int`                    |
+| `VAT`                 | The amount of tax on the purchase               | `float`                  |
+| `total`               | The total cost of the purchase                  | `float`                  |
+| `date`                | The date on which the purchase was made         | `datetime64[ns]`         |
+| `time`                | The time at which the purchase was made         | `timedelta64[ns]`        |
+| `payment`             | The total amount paid                           | `float`                  |
+| `cogs`                | Cost Of Goods Sold                              | `float`                  |
+| `gross_margin_pct`    | Gross margin percentage                         | `float`                  |
+| `gross_income`        | Gross Income                                    | `float`                  |
+| `rating`              | Customer Rating                                 | `float`                  |
 
 ---
 
